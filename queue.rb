@@ -7,7 +7,7 @@ class Queue
     @items << obj
   end
 
-  def dequeue(obj)
+  def dequeue
     @items.shift
   end
 
