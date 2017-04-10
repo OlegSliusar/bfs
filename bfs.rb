@@ -12,6 +12,7 @@ def do_bfs(graph, source)
 
   queue = Queue.new
   queue.enqueue(source)
+  
   while !queue.is_empty?
     u = queue.dequeue
 

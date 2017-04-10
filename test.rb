@@ -12,6 +12,11 @@ adj_list = [
             ]
 bfs_info = do_bfs(adj_list, 3)
 
+def print_nil(obj)
+  return "nil" if obj.nil?
+  obj
+end
+
 bfs_info.each_with_index do |e, i|
-  puts "vertex #{i}  : distance = #{e[:distance]} predecessor = #{e[:predecessor]}"
+  puts "vertex #{i}  : distance = #{print_nil(e[:distance])} predecessor = #{print_nil(e[:predecessor])}"
 end
