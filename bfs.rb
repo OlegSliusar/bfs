@@ -10,5 +10,8 @@ def do_bfs(graph, source)
 
   bfs_info[source][:distance] = 0;
 
+  queue = Queue.new
+  queue.enqueue(source)
+  
   bfs_info
 end
